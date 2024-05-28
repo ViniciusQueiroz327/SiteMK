@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiMK</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <nav id="nav-cabecalho">
+            <div id="links-container">
+                <a href="index.html" class="links-cabecalho">HOME</a>
+                <a href="shop.html" class="links-cabecalho">SHOP</a>
+                <a href="about.html" class="links-cabecalho">ABOUT</a>
+            </div>
+            <img src="assets/imgs/iconelogin.png" alt="Login" id="iconelogin" onclick="openLoginPopup()">
+        </nav>
+    </header>    
+    <div id="aboutMe">
+        <blockquote>
+            Olá! Me chamo Vinicius Silva Queiroz, nasci no ano de 2002 e moro no Estado de São Paulo. <br>
+            Estudo Ciência da Computação pela UNASP (Centro Universitário Adventista de São Paulo), <br>
+            com conclusão prevista para dezembro de 2025. <br>
+            Desenvolvi este website com o intuito de praticar meus conhecimentos de HTML5 e CSS3 <br>
+            e para logo em seguida, dar continuidade aos meus estudos de JavaScript, e por fim, <br>
+            iniciar estudos no framework React.
+        </blockquote>
+    </div>
+    <div id="meusConhecimentos">
+        <h2>Meus conhecimentos:</h2>
+        <img src="assets/imgs/iconhtml5.png" alt="" title="HTML5">
+        <br>
+        <img src="assets/imgs/iconcss3.png" alt="" title="CSS3">
+        <br>
+        <img src="assets/imgs/iconjavascript.png" alt="" title="JavaScript">
+        <br>
+        <img src="assets/imgs/iconpyhton.png" alt="" title="Python">
+        <br>
+        <img src="assets/imgs/iconc.png" alt="" title="C">
+        <br>
+        <img src="assets/imgs/iconjava.png" alt="" title="Java">
+        <br>
+        <img src="assets/imgs/iconwindows.png" alt="" title="Sistema Operacional Windows">
+        <br>
+    </div>
+    <a href="#cabecalho"><img src="assets/imgs/upArrow.png" alt="" id="upArrow" title="Voltar ao topo"></a>
+    <footer>
+        <img src="assets/imgs/perfil.jfif" alt="" id="fotoPerfil" title="Esse sou eu 😊">
+        <div id="infoFooter">
+            <p>Vinicius Silva Queiroz</p>
+            <p>Estudante de Ciência da Computação</p>
+            <p>maio/2024</p>
+        </div>
+        <a href="https://www.linkedin.com/in/vinicius-queiroz-998479230/" target="_blank"><img src="assets/imgs/linkedin.png" alt="" class="logos" id="linkedin" title="Meu Linkedin"></a>
+        <a href="https://github.com/ViniciusQueiroz327" target="_blank"><img src="assets/imgs/github.png" alt="" class="logos" id="github" title="Meu Github"></a>
+    </footer>
+
+    <!-- Include login-popup -->
+<div id="login-popup-container"></div>
+
+<script>
+    // Carrega o pop-up de login
+    fetch('assets/login-popup.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('login-popup-container').innerHTML = data;
+        });
+</script>
+<script src="assets/script.js"></script>
+
+</body>
+</html>

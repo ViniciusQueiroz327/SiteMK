@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiMK</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="assets/imgs/mklogo.png">
+</head>
+<body>
+    <header id="cabecalho">
+        <nav id="nav-cabecalho">
+            <div id="links-container">
+                <a href="index.html" class="links-cabecalho">HOME</a>
+                <a href="shop.html" class="links-cabecalho">SHOP</a>
+                <a href="about.html" class="links-cabecalho">ABOUT</a>
+            </div>
+            <img src="assets/imgs/iconelogin.png" alt="Login" id="iconelogin" onclick="openLoginPopup()">
+        </nav>
+    </header>    
+    <section id="produtos">
+        <h2>Produtos Oficiais Mortal Kombat</h2>
+        <div class="produtos-container">
+            <div class="produto">
+                <img src="assets/imgs/product1.webp" alt="Produto 1">
+                <h3>T-shirt Mortal Kombat Sub-Zero vs Scorpion Fight</h3>
+                <p>Camiseta feita em malha algodão, com modelagem básica e manga curta. Esta peça tem um corte tradicional, mais solta, comprida e gola arredondada com acabamento em ribana.
+                    Todas as peças da bandUP são criadas e produzidas no Brasil!</p>
+                <p class="preco">R$ 69,90</p>
+                <button class="btn-comprar" onclick="window.open('https://www.lojawarnerbros.com.br/t-shirt-mortal-kombat-sub-zero-vs-scorpion-fight', '_blank')">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="assets/imgs/product2.webp" alt="Produto 2">
+                <h3>Caneca Mortal Kombat</h3>
+                <p>PRODUTO OFICIAL MORTAL KOMBAT
+                </p>
+                <p class="preco">R$ 69,90</p>
+                <button class="btn-comprar" onclick="window.open('https://www.lojawarnerbros.com.br/caneca-mortal-kombat', '_blank')">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="assets/imgs/product3.webp" alt="Produto 3">
+                <h3>Moletom com Capuz Mortal Kombat</h3>
+                <p>Camiseta feita em malha algodão, com modelagem básica e manga curta. Esta peça tem um corte tradicional, mais solta, comprida e gola arredondada com acabamento em ribana.
+                    Todas as peças da bandUP são criadas e produzidas no Brasil!</p>
+                <p class="preco">R$ 179,90</p>
+                <button class="btn-comprar" onclick="window.open('https://www.lojawarnerbros.com.br/moletom-com-capuz-mortal-kombat', '_blank')">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="assets/imgs/product4.webp" alt="Produto 3">
+                <h3>Camiseta Mortal Kombat Scorpion Perfil</h3>
+                <p>Camiseta feita em malha algodão, com modelagem básica e manga curta. Esta peça tem um corte tradicional, mais solta, comprida e gola arredondada com acabamento em ribana.
+                    Todas as peças da bandUP são criadas e produzidas no Brasil!</p>
+                <p class="preco">R$ 69,90</p>
+                <button class="btn-comprar" onclick="window.open('https://www.lojawarnerbros.com.br/camiseta-mortal-kombat-scorpion-perfil', '_blank')">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="assets/imgs/product5.webp" alt="Produto 3">
+                <h3>Camiseta Raglan Mortal Kombat Logo</h3>
+                <p>Camiseta feita em malha algodão, com modelagem básica e manga curta. Esta peça tem um corte tradicional, mais solta, comprida e gola arredondada com acabamento em ribana.
+                    Todas as peças da bandUP são criadas e produzidas no Brasil!</p>
+                <p class="preco">R$ 69,90</p>
+                <button class="btn-comprar" onclick="window.open('https://www.lojawarnerbros.com.br/camiseta-raglan-mortal-kombat-logo', '_blank')">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="assets/imgs/product6.webp" alt="Produto 3">
+                <h3>Camiseta Mortal Kombat Flawless Victory</h3>
+                <p>Camiseta feita em malha algodão, com modelagem básica e manga curta. Esta peça tem um corte tradicional, mais solta, comprida e gola arredondada com acabamento em ribana.
+                    Todas as peças da bandUP são criadas e produzidas no Brasil!</p>
+                <p class="preco">R$ 69,90</p>
+                <button class="btn-comprar" onclick="window.open('https://www.lojawarnerbros.com.br/camiseta-mortal-kombat-flawless-victory', '_blank')">Comprar</button>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+        <div>
+            <h3>Para ver o catálogo completo, acesse: <a href="https://www.lojawarnerbros.com.br/classicos/mortal-kombat" target="_blank" id="linkWarner">lojawarnerbros.com.br</a></h3>
+        </div>
+    </section>
+    <a href="#cabecalho"><img src="assets/imgs/upArrow.png" alt="" id="upArrow" title="Voltar ao topo"></a>
+    <footer>
+        <img src="assets/imgs/perfil.jfif" alt="" id="fotoPerfil" title="Esse sou eu 😊">
+        <div id="infoFooter">
+            <p>Vinicius Silva Queiroz</p>
+            <p>Estudante de Ciência da Computação</p>
+            <p>maio/2024</p>
+        </div>
+        <a href="https://www.linkedin.com/in/vinicius-queiroz-998479230/" target="_blank"><img src="assets/imgs/linkedin.png" alt="" class="logos" id="linkedin" title="Meu Linkedin"></a>
+        <a href="https://github.com/ViniciusQueiroz327" target="_blank"><img src="assets/imgs/github.png" alt="" class="logos" id="github" title="Meu Github"></a>
+    </footer>
+
+    <!-- Include login-popup -->
+<div id="login-popup-container"></div>
+
+<script>
+    // Carrega o pop-up de login
+    fetch('assets/login-popup.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('login-popup-container').innerHTML = data;
+        });
+</script>
+<script src="assets/script.js"></script>
+
+</body>
+</html>
